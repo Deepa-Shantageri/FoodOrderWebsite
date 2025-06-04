@@ -11,6 +11,7 @@ export default function Header(){
     const context=useContext(MealsDataContext);
     const usercontext=useContext(UserProgressContext);
     function handleCartClick(){
+        
        usercontext.showCart();
     }
     function handleCartClose(){
@@ -27,7 +28,7 @@ export default function Header(){
         modalActions=(
             <div className="modal-actions">
              <Button onClick={handleCartClose} textOnly>Close</Button>
-             <Button onClick={handleShowForm} >Go to Checkout</Button>
+             <Button onClick={handleShowForm}>Go to Checkout</Button>
             </div>
         )
     }

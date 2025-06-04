@@ -4,7 +4,7 @@ import FoodItem from "./FoodItem";
 const initialconfig={};
 export default function Meals(){
    
-   const {data:Mealsarray,isLoading,error}=useHttp('http://localhost:3000/meals',initialconfig,[]);
+   const {data:Mealsarray,isLoading,error}=useHttp('https://foodcartlatest.azurewebsites.net/meals',initialconfig,[]);
 
 
 if(isLoading)

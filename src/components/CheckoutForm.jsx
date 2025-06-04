@@ -21,7 +21,7 @@ export default function CheckoutForm({TotalAmount})
 
     const { data,
         error,
-        isLoading,sendRequest,clearData} =useHttp("http://localhost:3000/orders",initialconfig);
+        isLoading,sendRequest,clearData} =useHttp("https://foodcartlatest.azurewebsites.net/orders",initialconfig);
         
 function handleclose(){
     usercontext.hideCheckout();
